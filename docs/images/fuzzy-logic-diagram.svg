@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Fuzzy Logic Control System</text>
+  
+  <!-- Input Section -->
+  <rect x="50" y="100" width="150" height="80" rx="5" fill="#bbdefb" stroke="#1976d2" stroke-width="2" />
+  <text x="125" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Inputs</text>
+  <text x="125" y="155" font-family="Arial" font-size="12" text-anchor="middle">Soil Moisture Values</text>
+  
+  <!-- Fuzzification -->
+  <rect x="250" y="100" width="150" height="80" rx="5" fill="#c8e6c9" stroke="#388e3c" stroke-width="2" />
+  <text x="325" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Fuzzification</text>
+  <text x="325" y="155" font-family="Arial" font-size="12" text-anchor="middle">Convert to fuzzy values</text>
+  
+  <!-- Fuzzy Rule Base -->
+  <rect x="250" y="230" width="150" height="100" rx="5" fill="#e1bee7" stroke="#7b1fa2" stroke-width="2" />
+  <text x="325" y="260" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Fuzzy Rule Base</text>
+  <text x="325" y="285" font-family="Arial" font-size="12" text-anchor="middle">IF soil is dry</text>
+  <text x="325" y="305" font-family="Arial" font-size="12" text-anchor="middle">THEN activate valve</text>
+  
+  <!-- Fuzzy Inference Engine -->
+  <rect x="450" y="100" width="150" height="80" rx="5" fill="#fff9c4" stroke="#f57f17" stroke-width="2" />
+  <text x="525" y="120" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Fuzzy Inference</text>
+  <text x="525" y="140" font-family="Arial" font-size="12" text-anchor="middle">Engine</text>
+  <text x="525" y="160" font-family="Arial" font-size="12" text-anchor="middle">Apply fuzzy rules</text>
+  
+  <!-- Defuzzification -->
+  <rect x="650" y="100" width="150" height="80" rx="5" fill="#ffcdd2" stroke="#d32f2f" stroke-width="2" />
+  <text x="725" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Defuzzification</text>
+  <text x="725" y="155" font-family="Arial" font-size="12" text-anchor="middle">Convert to crisp outputs</text>
+  
+  <!-- Output Section -->
+  <rect x="650" y="230" width="150" height="100" rx="5" fill="#ffe0b2" stroke="#e65100" stroke-width="2" />
+  <text x="725" y="260" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Outputs</text>
+  <text x="725" y="285" font-family="Arial" font-size="12" text-anchor="middle">Valve Control</text>
+  <text x="725" y="305" font-family="Arial" font-size="12" text-anchor="middle">(ON/OFF)</text>
+  
+  <!-- Arrows -->
+  <line x1="200" y1="140" x2="250" y2="140" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="140" x2="450" y2="140" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="600" y1="140" x2="650" y2="140" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <line x1="325" y1="180" x2="325" y2="230" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="280" x2="450" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="725" y1="180" x2="725" y2="230" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+  
+  <!-- Membership Functions for Soil Moisture -->
+  <text x="400" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Membership Functions Example (Soil Moisture)</text>
+  
+  <!-- Coordinate System -->
+  <line x1="150" y1="400" x2="650" y2="400" stroke="#000" stroke-width="2" />
+  <line x1="150" y1="400" x2="150" y2="370" stroke="#000" stroke-width="2" />
+  
+  <text x="400" y="420" font-family="Arial" font-size="12" text-anchor="middle">Soil Moisture Value</text>
+  <text x="150" y="365" font-family="Arial" font-size="12" text-anchor="end" transform="rotate(-90, 140, 365)">Membership Degree</text>
+  
+  <!-- Membership Functions -->
+  <polyline points="150,400 200,370 300,400" fill="none" stroke="#d32f2f" stroke-width="2" />
+  <text x="220" y="390" font-family="Arial" font-size="10" text-anchor="middle" fill="#d32f2f">Dry</text>
+  
+  <polyline points="250,400 350,370 450,400" fill="none" stroke="#388e3c" stroke-width="2" />
+  <text x="350" y="390" font-family="Arial" font-size="10" text-anchor="middle" fill="#388e3c">Medium</text>
+  
+  <polyline points="400,400 500,370 650,400" fill="none" stroke="#1976d2" stroke-width="2" />
+  <text x="500" y="390" font-family="Arial" font-size="10" text-anchor="middle" fill="#1976d2">Wet</text>
+</svg>
